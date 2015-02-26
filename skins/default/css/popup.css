@@ -11,7 +11,7 @@
 
 /* header */
 #container #header {height:55px; position:relative;}
-#container #header h1 {position:absolute; top:17px; left:12px;}
+#container #header h1 {position:absolute; top:17px; left:0; border-left:3px solid #ff9435; padding-left:5px;}
 #container #header p {position:absolute; top:7px; right:20px;}
 
 /* text style */

@@ -24,7 +24,6 @@ class cashpayView extends cashpay
 	 */
 	function dispCashpayForm() 
 	{
-		debugPrint('dispCashpayForm');
 		if($this->module_info->login_required=='Y')
 		{
 			if(!Context::get('is_logged')) return new Object(-1, 'msg_login_required');

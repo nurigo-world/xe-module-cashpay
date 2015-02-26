@@ -59,76 +59,76 @@
 		</div>
 	</section>
 	<section class="section">
-		<h1>기본설정</h1>
+		<h1>{$lang->basic_settings}</h1>
 		<div class="x_control-group">
-			<label class="x_control-label" for="account_title">계좌이름</label>
+			<label class="x_control-label" for="account_title">{$lang->account_title}</label>
 			<div class="x_controls">
 				<input type="text" name="account_title" id="account_title" value="{$module_info->account_title}" />
 				<a href="#account_title_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="account_title_help" class="x_help-block" hidden>미입력시 "무통장입금"으로 표시됩니다</p>
+				<p id="account_title_help" class="x_help-block" hidden>{$lang->about_account_title}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="bank_name">은행명</label>
+			<label class="x_control-label" for="bank_name">{$lang->bank_name}</label>
 			<div class="x_controls">
 				<input type="text" name="bank_name" id="bank_name" value="{$module_info->bank_name}" />
 				<a href="#bank_name_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="bank_name_help" class="x_help-block" hidden>은행명을 입력하세요</p>
+				<p id="bank_name_help" class="x_help-block" hidden>{$lang->about_bank_name}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="account_number">계좌번호</label>
+			<label class="x_control-label" for="account_number">{$lang->account_number}</label>
 			<div class="x_controls">
 				<input type="text" name="account_number" id="account_number" value="{$module_info->account_number}" />
 				<a href="#account_number_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="account_number_help" class="x_help-block" hidden>계좌번호를 입력하세요</p>
+				<p id="account_number_help" class="x_help-block" hidden>{$lang->about_account_number}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="account_holder">예금주</label>
+			<label class="x_control-label" for="account_holder">{$lang->account_holder}</label>
 			<div class="x_controls">
 				<input type="text" name="account_holder" id="account_holder" value="{$module_info->account_holder}" />
 				<a href="#account_holder_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="account_holder_help" class="x_help-block" hidden>예금주를 입력하세요</p>
+				<p id="account_holder_help" class="x_help-block" hidden>{$lang->about_account_holder}</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="section">
-		<h1>옵션설정</h1>
+		<h1>{$lang->option_settings}</h1>
 		<div class="x_control-group">
-			<label class="x_control-label" for="description">결제수단 설명</label>
+			<label class="x_control-label" for="description">{$lang->payment_description}</label>
 			<div class="x_controls">
 				<textarea name="description" id="description">{$module_info->description}</textarea>
 				<a href="#description_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="description_help" class="x_help-block" hidden>결제수단 설명문구를 입력하세요</p>
+				<p id="description_help" class="x_help-block" hidden>{$lang->about_payment_description}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="guide_text">안내문구</label>
+			<label class="x_control-label" for="guide_text">{$lang->guide_text}</label>
 			<div class="x_controls">
 				<textarea name="guide_text" id="guide_text">{$module_info->guide_text}</textarea>
 				<a href="#guide_text_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="guide_text_help" class="x_help-block" hidden>안내될 문구를 입력하세요</p>
+				<p id="guide_text_help" class="x_help-block" hidden>{$lang->about_guide_text}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="button_title">버튼타이틀</label>
+			<label class="x_control-label" for="button_title">{$lang->button_title}</label>
 			<div class="x_controls">
 				<input type="text" name="button_title" id="button_title" value="{$module_info->button_title}" />
 				<a href="#button_title_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="button_title_help" class="x_help-block" hidden>미입력시 "주문완료하기"로 표시됩니다</p>
+				<p id="button_title_help" class="x_help-block" hidden>{$lang->about_button_title}</p>
 			</div>
 		</div>
 		<div class="x_control-group">
-			<label class="x_control-label" for="login_required">로그인 여부</label>
+			<label class="x_control-label" for="login_required">{$lang->login_required}</label>
 			<div class="x_controls">
 				<select name="login_required" id="login_required">
-					<option value="N" selected="selected"|cond="$module_info->login_required=='N'">로그인하지 않아도 결제 가능</option>
-					<option value="Y" selected="selected"|cond="$module_info->login_required=='N'">로그인 후 결제 가능</option>
+					<option value="N" selected="selected"|cond="$module_info->login_required=='N'">{$lang->login_not_required}</option>
+					<option value="Y" selected="selected"|cond="$module_info->login_required=='N'">{$lang->payment_after_login}</option>
 				</select>
 				<a href="#login_required_help" class="x_icon-question-sign" data-toggle>{$lang->help}</a>
-				<p id="login_required_help" class="x_help-block" hidden>로그인 후 결제가능여부를 선택하세요</p>
+				<p id="login_required_help" class="x_help-block" hidden>{$lang->about_login_required}</p>
 			</div>
 		</div>
 	</section>
